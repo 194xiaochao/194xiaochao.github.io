@@ -23,6 +23,6 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3",
-    "webpack": "^5.70.0"
+    "webpack": "^5.72.0"
   }
 }
