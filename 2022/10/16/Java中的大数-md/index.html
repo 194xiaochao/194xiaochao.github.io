@@ -292,10 +292,6 @@
             <i class="fab fa-github"></i>
         </a>
     
-        <a href="https://twitter.com" title="Twitter" rel="nofollow" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
-    
 </div>
 
 <!-- sidebar social end -->
@@ -306,10 +302,10 @@
     
         <li>
             <div class="trm-label">
-                Residence:
+                sidebar.country:
             </div>
             <div class="trm-label trm-label-light">
-                地球村
+                中国
             </div>
         </li>
     
@@ -423,24 +419,28 @@
 
     
 
-    
-        <div class="trm-footer-item">
-            <span>
-                Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v6.3.0
-            </span>
-            <span class="footer-separator"> | </span>
-            <span> 
-                Theme - 
-                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
-                v1.1.1
-            </span>
-        </div>
       
 
+    
+        <div class="trm-footer-item">
+            The blog has been lovely to run <span id="since" class="trm-accent-color"></span> day
+        </div>
      
 
      
 </footer>
+
+<script>
+    function show_date_time () {
+        BirthDay = new Date("04/10/2022 17:00:00");
+        today = new Date();
+        timeold = (today.getTime() - BirthDay.getTime());
+        msPerDay = 24 * 60 * 60 * 1000
+        day = Math.floor(timeold / msPerDay)
+        since.innerHTML = day
+    }
+    show_date_time()
+</script>
  
                     <!-- footer end -->
 
