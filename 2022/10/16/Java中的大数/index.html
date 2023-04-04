@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="在平常工作中，业务涉及到数字较大的比如保险金额会定义为BigDecimal类型，下面说一下它的一些常用方法：定义一个BigDecimal类型的变量：    BigDecimal num &#x3D; new BigDecimal(2000);add方法可以做单次加法，也可以在for循环中做累加单次加法：    num.add(new BigDecimal(“100”));    System.ou">
+<meta name="description" content="在平常工作中，业务涉及到数字较大的比如保险金额会定义为BigDecimal类型，下面说一下它的一些常用方法：定义一个BigDecimal类型的变量：BigDecimal num &#x3D; new BigDecimal(2000); add方法可以做单次加法，也可以在for循环中做累加单次加法：num.add(new BigDecimal(“100”));System.out.println(n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java中的大数.md">
 <meta property="og:url" content="https://194xiaochao.github.io/2022/10/16/Java%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%95%B0/index.html">
 <meta property="og:site_name" content="小小抄博客">
-<meta property="og:description" content="在平常工作中，业务涉及到数字较大的比如保险金额会定义为BigDecimal类型，下面说一下它的一些常用方法：定义一个BigDecimal类型的变量：    BigDecimal num &#x3D; new BigDecimal(2000);add方法可以做单次加法，也可以在for循环中做累加单次加法：    num.add(new BigDecimal(“100”));    System.ou">
+<meta property="og:description" content="在平常工作中，业务涉及到数字较大的比如保险金额会定义为BigDecimal类型，下面说一下它的一些常用方法：定义一个BigDecimal类型的变量：BigDecimal num &#x3D; new BigDecimal(2000); add方法可以做单次加法，也可以在for循环中做累加单次加法：num.add(new BigDecimal(“100”));System.out.println(n">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-10-16T01:32:07.000Z">
-<meta property="article:modified_time" content="2023-04-04T15:15:03.371Z">
+<meta property="article:modified_time" content="2023-04-04T15:25:37.576Z">
 <meta property="article:author" content="小小抄">
 <meta property="article:tag" content="生活、工作、人生">
 <meta name="twitter:card" content="summary">
@@ -361,7 +361,14 @@
 </div>
 <div class="trm-card ">
     <article class="trm-publication">
-    <p>在平常工作中，业务涉及到数字较大的比如保险金额会定义为BigDecimal类型，下面说一下它的一些常用方法：<br>定义一个BigDecimal类型的变量：<br>    BigDecimal num &#x3D; new BigDecimal(2000);<br>add方法可以做单次加法，也可以在for循环中做累加<br>单次加法：<br>    num.add(new BigDecimal(“100”));<br>    System.out.println(num.toString()); &#x2F;&#x2F;2100<br>divide()&#x2F;&#x2F;商<br>multiply()&#x2F;&#x2F;相减<br>subtract()&#x2F;&#x2F;差<br>mod()&#x2F;&#x2F;取余<br>sqrt()&#x2F;&#x2F;平方根<br>注意：大数之间是不能用运算符进行加减乘除的，需要用到他里面的方法进行运算，也比较简单。</p>
+    <p>在平常工作中，业务涉及到数字较大的比如保险金额会定义为BigDecimal类型，下面说一下它的一些常用方法：<br>定义一个BigDecimal类型的变量：<br>BigDecimal num &#x3D; new BigDecimal(2000);</p>
+<p>add方法可以做单次加法，也可以在for循环中做累加<br>单次加法：<br>num.add(new BigDecimal(“100”));<br>System.out.println(num.toString()); &#x2F;&#x2F;2100<br>循环累计：<br>for(int i&#x3D;0;i&lt;10;i++){<br>num &#x3D; num.add(new BigDeciaml(“1”));<br>}<br>System.out.println(num); &#x2F;&#x2F;2010</p>
+<p>divide()&#x2F;&#x2F;商</p>
+<p>multiply()&#x2F;&#x2F;相减</p>
+<p>subtract()&#x2F;&#x2F;差</p>
+<p>mod()&#x2F;&#x2F;取余</p>
+<p>sqrt()&#x2F;&#x2F;平方根</p>
+<p>注意：大数之间是不能用运算符进行加减乘除的，需要用到他里面的方法进行运算，也比较简单。</p>
 
 </article>
     
